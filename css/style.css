@@ -1,0 +1,337 @@
+*{
+   padding: 0px;
+   margin: 0px;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
+    position:sticky;
+    top: 0px;
+    z-index: 2;
+}
+.navbar::before{
+         content: "";
+         background-color:black;
+         position: absolute;
+         top: 0px;
+         left: 0px;
+         height: 100%;
+         width: 100%;
+         z-index: -1;
+         opacity: 0.5;
+}
+
+/* image or logo section */
+#logo{
+    margin: 0px 8px ;
+    padding: 2px 3px ;
+}
+
+.navbar img{
+    height: 50px;
+    width: 50px;
+}
+
+
+/* ul or list style section */
+.navbar ul{
+    display: flex;
+    list-style: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+.navbar a{
+    padding: 3px 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+}
+.navbar a:hover{
+     /* color: black; */
+     /* background-color: #fff; */
+     text-decoration: underline;
+     transition-duration: 2s;
+     /* text-decoration-color: red; */
+     text-decoration-style: solid;
+    
+}
+
+
+
+/* home section or second section */
+#home{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: 400px;
+     box-sizing: border-box;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background:url('/images/a.jpg') center center/cover;
+    top: 0px;
+    left: 0px;
+    height: 460px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#home h1{
+    color: #fff;
+}
+
+#home p{
+    margin: 2px 2px;
+    width:bold;
+    color: #fff;
+    font-size: 120%;
+}
+
+#home .btn{
+    margin: 9px 2px;
+    padding:2px 11px;
+    border-radius: 8px;
+    background-color: lightgray;
+    border:2px solid gray;
+    
+}
+/* service container */
+#services-container img{
+    width: 150px;
+    height: 160px;
+    
+}
+#services-container{
+    background-color: rgb(230, 237, 245);
+    border: 1px solid black;
+}
+#services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.box{
+    display: flex;
+    margin: 7px 12px;
+    border: 2px solid black;
+    border-radius: 12px ;
+    padding: 11px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:lightgrey;
+    box-shadow: 7px 7px  4px grey;
+    margin-bottom: 51px;
+}
+
+/* client section */
+#clients{
+    display: flex;
+    justify-content: center;
+     align-items: center;
+     /* z-index: -2; */
+}
+.client-item img{
+    width: 150px;
+    /* z-index: -2; */
+}
+#clients .omfoo{
+    width: 125px;
+    /* z-index: -2; */
+}
+
+#client-section{
+    position: relative;
+    border: 1px solid black;
+    /* z-index: -2; */
+}
+
+#client-section::before{
+
+    content: "";
+    background:url('/images/b.jpg') center center/cover no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    
+}
+#client-section h1{
+    margin: 23px 2px;
+    margin-top: 33px; 
+}
+
+/* contect section */
+#contect{
+    border-top:1px solid black ;
+    position: relative;
+    /* z-index: -2; */
+}
+#contect::before{
+
+    content: "";
+    background-color: rgb(172, 246, 246);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#contect-box{
+    display: flex;
+    padding-bottom: 34px;
+    width: 100%;
+}
+#form{
+    border: 2px solid black;
+    display: block;
+    margin: 1px auto;
+    background-color: lightgrey;
+    box-shadow: 12px 12px 5px 4px grey;
+     border-radius: 13px;
+
+}
+.form-group{
+    margin: 12px 23px;
+}
+#contect-box input,
+#contect-box textarea{
+    width: 100%;
+    padding:0px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    
+}
+
+#contect-box #submit{
+    margin: 12px 1px;
+}
+ #contect-box label{
+    font-size: 1.1rem;
+
+}
+
+/* footer */
+footer div{
+    text-align: center;
+    height: 50px;
+    padding:20px 1px ;
+    box-sizing: border-box;
+}
+/* utility classses */
+.h-primary{
+    margin: 13px 2px;
+    font-size: 2rem;
+}
+.h-secondry:hover{
+color:black;
+background-color: lightgrey;
+
+ }
+.center{
+    display: block;
+    text-align: center;
+    margin: 20px 2px;
+    font-weight: bold;
+    font-size: 3rem;
+    /* text-shadow: 5px 2px 2px grey; */
+    
+}
+.h-secondry{
+    font-size: 1.3rem;
+    border: 2px solid black;
+    padding: 3px;
+    border-radius: 4px;
+    background-color: white;
+    position: relative;
+    
+}
+
+/* add on css  */
+
+.ulty li{
+
+    list-style-type: none;
+}
+.ulty li a{
+
+    text-decoration: none;
+}
+.h-secondry:hover>ul{
+    display: block;
+}
+
+.ulty{
+    flex-direction: column;
+    position: absolute;
+    display: none;
+    top: 30px;
+    left: -10px;
+    z-index: 1;
+}
+ .ulty li{
+    width: 100px;
+    padding: 10px 0px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 8px  grey;
+    animation-duration: .8s;
+    background-color: rgb(209, 218, 221);
+    margin: 1px 0px;
+}
+.ulty li:hover{
+    background-color:lightgrey;
+    color:black;
+    border-radius: 4px;
+}
+/* css in  in 2nd */
+.ultym{
+    position: absolute;
+    display: none;
+    left: 100px;
+     top: 0px;
+     
+}
+.h-secondry ul .a:hover ul{
+    display: block;
+}
+.h-secondry ul .b:hover ul{
+    display: block;
+    top: 45px;
+}
+.h-secondry ul .c:hover ul{
+    display: block;
+    top: 90px;
+}
+.h-secondry ul .d:hover ul{
+    display: block;
+    top: 125px;
+}
+.h-secondry ul .e:hover ul{
+    display: block;
+    top: 125px;
+}
+.h-secondry ul .f:hover ul{
+    display: block;
+    top: 125px;
+}
+.ultym li{
+    width: 250px;
+
+}
